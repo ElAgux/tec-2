@@ -1,0 +1,10 @@
+PARA CARGAR CAMBIOS:
+git add .
+
+git commit -m "Commit message"
+
+git push
+
+PARA ACTUALIZAR LOCAL: git pull
+
+PAGINA DE AYUDA: https://rogerdudler.github.io/git-guide/index.es.html
