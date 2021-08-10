@@ -7,7 +7,9 @@
 <form action="index.php" method="post" enctype="multipart/form-data">  
     Seleccione archivo: <input name="file" type="file" size="150" maxlength="150">  
     <br><br> 
-  <input name="submit" type="submit" value="SUBIR ARCHIVO">   
+  <input name="submit" type="submit" value="SUBIR ARCHIVO">  
+  <a href="mostrar.php">Ver Archivos</a>
+  </table>
 </form> 
 </body>
 </html>
