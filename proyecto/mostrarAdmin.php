@@ -16,16 +16,12 @@
 		include 'config.php';
 		$sql = "select * from archivos where mostrar = '1'";
 		$query = mysqli_query($conexion, $sql);
-		
-		
-
+		 
 		while ($registro= mysqli_fetch_array ($query)){?>
 			<?php
 			$file_name = $registro['name'];
 			$file_name_final = trim ($file_name);
 			$ruta = "upload/".$file_name_final; 
-			$delete = "UPDATE FROM archivos SET mostrar = '0' WHERE id = '".$registro['id']."'";
-			$queryd = mysqli_query($conexion, $delete);
 			?>
 			<tr>
 				<td><?php echo $registro['id']; ?></td>
@@ -34,10 +30,10 @@
                 <td><?php echo $registro['size']; ?></td>
                  <td><?php echo $registro['mostrar']; ?></td>
               	<td><?php echo "<a href=".$ruta."><IMG SRC=images.png WIDTH=30 HEIGHT=30></a>";?></td>
-              	<td><?php echo "<a href=".$queryd.">eliminar</a>";?></td>
-              </tr>"
+				<td><?php echo $registro['fecha_upload']; ?></td>
+              </tr>
           <?php } ?>
-		  <form action="main.php">
+		  <form action="index.php">
        	 		<input type="submit" value="Subir Archivo" />
 		</form>
 	</table>
