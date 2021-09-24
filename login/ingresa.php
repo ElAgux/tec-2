@@ -18,7 +18,7 @@ $_SESSION['usuario']=$valida2[6];    /*el id del correo "usuario" es el ide de l
    /* esto valida si el usuario es admin o no le da los privilegios */
 
     echo"llego super";
-    header('Location: ../mostrarAdmin.php');
+    header('Location: ../mostrar/mostrarAdmin.php');
 
 }
 
@@ -34,7 +34,7 @@ else{
     '
     <script>
     alert("CONTRASEÑA O USUARIO INCORRECTO");
-    window.location="HTML1.html";
+    window.location="login.html";
     </script>
     
     ';

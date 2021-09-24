@@ -12,31 +12,30 @@
 		<td>File</td>
 		<td>Type</td>
 		<td>Size</td>
+		<td>Curso</td>
 	<?php
 		include 'config.php';
-		$sql = "select * from archivos where mostrar = '1'";
+		$condicion = $_GET['curso_materia'];
+		$sql = "select * from archivos where mostrar = '1' AND curso = '$condicion'";
 		$query = mysqli_query($conexion, $sql);
+		//echo "1: $condicion";
 		 
 		while ($registro= mysqli_fetch_array ($query)){?>
 			<?php
 			$file_name = $registro['name'];
 			$file_name_final = trim ($file_name);
-			$ruta = "upload/".$file_name_final; 
+			$ruta = "../upload/".$file_name_final; 
 			?>
 			<tr>
 				<td><?php echo $registro['id']; ?></td>
 				<td><?php echo $registro['name']; ?></td>
                 <td><?php echo $registro['type']; ?></td>
                 <td><?php echo $registro['size']; ?></td>
-                 <td><?php echo $registro['mostrar']; ?></td>
-              	<td><?php echo "<a href=".$ruta."><IMG SRC=images.png WIDTH=30 HEIGHT=30></a>";?></td>
+				<td><?php echo $registro['curso']; ?></td>
+              	<td><?php echo "<a href=".$ruta."><IMG SRC=download.png WIDTH=30 HEIGHT=30></a>";?></td>
 				<td><?php echo $registro['fecha_upload']; ?></td>
               </tr>
           <?php } ?>
-		  <form action="index.php">
-       	 		<input type="submit" value="Subir Archivo" />
-		</form>
 	</table>
       </body>
       </html>
-

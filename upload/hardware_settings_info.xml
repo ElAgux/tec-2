@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hardware_settings_info timeStamp="2020/10/14 17:22:02">
+	<systemInfo OS="Microsoft Windows 10  (Build 18363)" OSCompatibility="none" totalMemory="8351596" winPlatformID="2" winMajorVersion="10" winMinorVersion="0" hasBattery="false" rating="4" />
+	<cpu name="Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz" speed="3392" processors="4" processorStride="1" hyperThreading="false" sse3Supported="true" avxSupported="true" rating="3" />
+	<graphics_card name="NVIDIA GeForce GTX 960" directx_version="12" driver="NVIDIA 45671, r456_61" vendorId="0x10DE" deviceId="0x1401" memory="2007" rating="3">
+		<outputMonitor description="\\.\DISPLAY1" index="1" windows_index="1">
+			<resolution width="1024" height="768">
+				<refreshRate numerator="60004" denominator="1000" interlaced="false" />
+				<refreshRate numerator="70069" denominator="1000" interlaced="false" />
+				<refreshRate numerator="75029" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1152" height="864">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="720">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1001" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="768">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="800">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="960">
+				<refreshRate numerator="59940" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="1024">
+				<refreshRate numerator="59940" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1360" height="768">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1366" height="768">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1600" height="900">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1600" height="1024">
+				<refreshRate numerator="59940" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1680" height="1050">
+				<refreshRate numerator="59940" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1768" height="992">
+				<refreshRate numerator="59940" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1920" height="1080">
+				<refreshRate numerator="59940" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+		</outputMonitor>
+		<outputMonitor description="\\.\DISPLAY2" index="2" windows_index="2">
+			<resolution width="1024" height="768">
+				<refreshRate numerator="60004" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1152" height="864">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="720">
+				<refreshRate numerator="50000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1001" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="768">
+				<refreshRate numerator="59790" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="800">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="960">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1280" height="1024">
+				<refreshRate numerator="60020" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1360" height="768">
+				<refreshRate numerator="59790" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1366" height="768">
+				<refreshRate numerator="59790" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1600" height="900">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1600" height="1024">
+				<refreshRate numerator="23976" denominator="1000" interlaced="false" />
+				<refreshRate numerator="24000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="25000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="29970" denominator="1000" interlaced="false" />
+				<refreshRate numerator="30000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="50000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="59940" denominator="1000" interlaced="true" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1001" interlaced="false" />
+			</resolution>
+			<resolution width="1600" height="1200">
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+			</resolution>
+			<resolution width="1680" height="1050">
+				<refreshRate numerator="23976" denominator="1000" interlaced="false" />
+				<refreshRate numerator="24000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="25000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="29970" denominator="1000" interlaced="false" />
+				<refreshRate numerator="30000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="50000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="59940" denominator="1000" interlaced="true" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1001" interlaced="false" />
+			</resolution>
+			<resolution width="1768" height="992">
+				<refreshRate numerator="50000" denominator="1000" interlaced="true" />
+				<refreshRate numerator="59940" denominator="1000" interlaced="true" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="true" />
+			</resolution>
+			<resolution width="1920" height="1080">
+				<refreshRate numerator="23976" denominator="1000" interlaced="false" />
+				<refreshRate numerator="24000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="25000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="29970" denominator="1000" interlaced="false" />
+				<refreshRate numerator="30000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="50000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="59940" denominator="1000" interlaced="true" />
+				<refreshRate numerator="60000" denominator="1000" interlaced="false" />
+				<refreshRate numerator="60000" denominator="1001" interlaced="false" />
+			</resolution>
+		</outputMonitor>
+	</graphics_card>
+	<graphics_card name="Microsoft Basic Render Driver" directx_version="12" driver="" vendorId="0x1414" deviceId="0x008C" memory="0" rating="3" />
+</hardware_settings_info>

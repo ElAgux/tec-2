@@ -10,9 +10,10 @@
 <form action="main.php" method="post" enctype="multipart/form-data">  
 	<table align="center" border="1" bgcolor="green">
     <td>Seleccione archivo: <input name="file" type="file" size="150" maxlength="150"></td>
-    <td>Curso: <input type="number" id="curso" name="curso" min="1" max="7" required=""> </td>
+    <td>Curso: <input type="number" id="curso" name="curso" min="1" max="7" required=""></td>
+    <td>N~Manteria: <input type="number" id="materia" name="materia" min="1" max="7" required=""> </td>
   <td><input name="submit" type="submit" value="SUBIR ARCHIVO"></td>
-  <a href="mostrarAdmin.php">Ver Archivos</a>
+  <a href="../mostrar/mostrarAdmin.php">Ver Archivos</a>
   </table>
 </form> 
 </body>
