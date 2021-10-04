@@ -14,7 +14,7 @@ header label {
     width: 25px;
     height: 20px;
     padding: 10px;
-    border-right: lpx solid #fff;
+    border-right-color: #fff;
 }
 header label:hover{
     cursor: pointer;
@@ -25,7 +25,7 @@ margin: 0;
 list-style: none;
 padding: 0;
 display: flex;
-border-right: #fff;
+border-right-color: #fff;
 }
 
  ul  li a:hover{
@@ -83,6 +83,9 @@ pading: 15px;
 header nav ul li:hover .children {
     display: block;
 }
+.children nav ul li ul li{
+width: 100px;
+}
 header nav ul li .children {
     display: none;
     background: #011826;
@@ -90,6 +93,7 @@ header nav ul li .children {
     width: 110%
     z-index:1000;
 }
+
 @media screen {
     
 header nav{

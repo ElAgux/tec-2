@@ -7,6 +7,7 @@
 	<title>mostrar datos</title>
 </head>
 <body>
+	<a href="../index.html">Volver Inicio</a>
 		<table align="center" border="1" bgcolor="green">
 		<td>ID</td>
 		<td>File</td>
@@ -14,6 +15,7 @@
 		<td>Size</td>
 		<td>Curso</td>
 	<?php
+	
 		include 'config.php';
 		$condicion = $_GET['curso_materia'];
 		$sql = "select * from archivos where mostrar = '1' AND curso = '$condicion'";

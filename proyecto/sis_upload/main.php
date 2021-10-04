@@ -36,14 +36,22 @@ $file_name = str_replace(' ','_',$_FILES['file']['name']);
 $file_tmp = $_FILES['file']['tmp_name'];
 $ruta = "../upload/".$file_name;
 $n_curso = $_POST['curso'];
+$espe=$_POST['especialidad'];
 $n_materia = $_POST['materia'];
 $fecha = DATE('Y-m-d');
+$n_espe;
+switch($espe){
+case "programacion": $n_espe= '1';break;
+case "electronica": $n_espe= '2';break;
+case "construcciones": $n_espe= '3';break;
+
+}
 
 $curso_m = str_cat($n_curso,$n_materia);
 
 move_uploaded_file($file_tmp, $ruta);
 
-$sql = "INSERT INTO archivos(name,type,size,curso,fecha_upload,mostrar) VALUES ('$file_name','".$_FILES['file']['type']."','".$_FILES['file']['size']."','$curso_m','$fecha','1')";
+$sql = "INSERT INTO archivos(name,type,size,curso,n_especialidad,fecha_upload,mostrar) VALUES ('$file_name','".$_FILES['file']['type']."','".$_FILES['file']['size']."','$curso_m','$n_espe','$fecha','1')";
 
 $sql_query = mysqli_query($conexion, $sql);
 
