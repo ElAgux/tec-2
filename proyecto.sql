@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-10-2021 a las 16:24:48
--- Versión del servidor: 10.1.28-MariaDB
--- Versión de PHP: 7.1.11
+-- Tiempo de generación: 04-10-2021 a las 06:12:49
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -34,8 +33,9 @@ CREATE TABLE `archivos` (
   `type` varchar(200) NOT NULL,
   `size` int(200) NOT NULL,
   `curso` int(7) NOT NULL,
+  `materia` int(11) NOT NULL,
   `n_especialidad` int(11) NOT NULL,
-  `fecha_upload` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `fecha_upload` datetime NOT NULL DEFAULT current_timestamp(),
   `mostrar` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -43,10 +43,20 @@ CREATE TABLE `archivos` (
 -- Volcado de datos para la tabla `archivos`
 --
 
-INSERT INTO `archivos` (`id`, `name`, `type`, `size`, `curso`, `n_especialidad`, `fecha_upload`, `mostrar`) VALUES
-(56, 'template.php', 'application/octet-stream', 6729, 46, 0, '2021-10-01 00:00:00', 1),
-(57, 'estilos.css', 'text/css', 1878, 46, 3, '2021-10-01 00:00:00', 1),
-(58, 'mardel1.jpg', 'image/jpeg', 428328, 49, 2, '2021-10-01 00:00:00', 1);
+INSERT INTO `archivos` (`id`, `name`, `type`, `size`, `curso`, `materia`, `n_especialidad`, `fecha_upload`, `mostrar`) VALUES
+(84, 'DS4Updater.exe', 'application/x-msdownload', 573952, 1, 0, 3, '2021-10-04 00:00:00', 1),
+(85, 'DS4Updater.exe', 'application/x-msdownload', 573952, 1, 0, 3, '2021-10-04 00:00:00', 1),
+(86, 'DS4Updater.exe', 'application/x-msdownload', 573952, 1, 0, 3, '2021-10-04 00:00:00', 1),
+(87, 'DS4Updater.exe', 'application/x-msdownload', 573952, 2, 0, 3, '2021-10-04 00:00:00', 1),
+(88, 'DS4Updater.exe', 'application/x-msdownload', 573952, 3, 0, 3, '2021-10-04 00:00:00', 1),
+(89, 'DS4Updater.exe', 'application/x-msdownload', 573952, 4, 0, 2, '2021-10-04 00:00:00', 1),
+(90, 'Profiles.xml', 'text/xml', 1089, 2, 0, 0, '2021-10-04 00:00:00', 1),
+(91, 'Profiles.xml', 'text/xml', 1089, 3, 0, 2, '2021-10-04 00:00:00', 1),
+(92, 'DS4Windows.exe', 'application/x-msdownload', 3168256, 1, 0, 0, '2021-10-04 00:00:00', 1),
+(93, 'DS4Windows.exe', 'application/x-msdownload', 3168256, 2, 0, 0, '2021-10-04 00:00:00', 1),
+(94, 'DS4Windows.exe', 'application/x-msdownload', 3168256, 5, 0, 3, '2021-10-04 00:00:00', 1),
+(95, 'DS4Windows.exe', 'application/x-msdownload', 3168256, 5, 0, 1, '2021-10-04 00:00:00', 1),
+(96, 'DS4Windows.exe', 'application/x-msdownload', 3168256, 1, 0, 0, '2021-10-04 00:00:00', 1);
 
 -- --------------------------------------------------------
 
@@ -95,7 +105,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `archivos`
 --
 ALTER TABLE `archivos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
