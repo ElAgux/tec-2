@@ -1,3 +1,11 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.img{
+    width: 50px;
+    border-radius: 30%;
+}
 body{
 margin: 0; 
 font-family: sans-serif;
@@ -20,102 +28,52 @@ header label:hover{
     cursor: pointer;
     background-color: rgba(#a8bac0);
 }
-.menu ul{
-margin: 0;
-list-style: none;
-padding: 0;
-display: flex;
-border-right-color: #fff;
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
 }
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li ul {
+    display: flex;
+    flex-direction: column;
 
- ul  li a:hover{
-    background-color: #fff;
 }
-.menu li a {
-display: block;
-padding: 10px 10px;
-border-right: 1px solid rgb(0, 0, 0);
-text-decoration: none;
-}
-
-header nav ul li:hover .children {
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
     display: block;
 }
-header nav ul li .children {
-    display: none;
-    background: #011826;
+a:hover{
+    background: rgb(44,44,44);
+}
+header nav ul li ul{
     position: absolute;
-    
-}
-@media (max-width:768px) {
-    header label{
-     display: block;
- }
-	.menu{
-	position:absolute;
-    background:#4e94ab;
-    width: 70%;
-    margin-left: -70%;
-	
-}
-	label:hover {
-    background-color: #fff;
-    
-	     
-}   
-.menu ul{
-flex-direction: column;
-}
-.menu  li{
-    border-top: 1px  solid #fff;
-}
-#btn-menu:checked ~ .menu{
-    margin: 0;
-}
-label  ul{
-margin: 8px 0px 2px 5px;
-list-style:none;
-display:none;
-background-color: #gray;
-pading: 15px;
-
-}	
-header nav ul li:hover .children {
-    display: block;
-}
-.children nav ul li ul li{
-width: 100px;
-}
-header nav ul li .children {
+    background: #008a93;
+    align-items: center;
     display: none;
-    background: #011826;
+} 
+header nav ul li ul li {
+    width: 180px;
+    position: relative;
+}
+header nav ul li ul li ul {
+    top: 0%;
+    left: 180px;
     position: absolute;
-    width: 110%
-    z-index:1000;
 }
-
-@media screen {
-    
-header nav{
-    width: 80%;
-    height: calc(100%-70%);
-    position: fixed;
-    left:0;
-    margin: 0;
-    overflow: scroll;
-}
-header nav ul li {
-    display: block;
-    border-bottom: 1px solid rgba (255,255,255,.5);
-}
-
-header nav ul li .children{
-    width: 100%;
-    position:relative;
+header nav ul li:hover > ul{
+    display:block;
 
 }
-
-}
-    
-
+.log{
+        list-style: none;
+    display: flex;
+    justify-content: space-between;
 }

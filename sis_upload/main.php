@@ -54,7 +54,7 @@ if($n_curso<='3'){
 
 move_uploaded_file($file_tmp, $ruta);
 
-$sql = "INSERT INTO archivos(name,type,size,curso,materia,n_especialidad,fecha_upload,mostrar) VALUES ('$file_name','".$_FILES['file']['type']."','".$_FILES['file']['size']."','$n_curso','n_materia','$n_espe','$fecha','1')";
+$sql = "INSERT INTO archivos(name,type,size,curso,materia,n_especialidad,fecha_upload,mostrar) VALUES ('$file_name','".$_FILES['file']['type']."','".$_FILES['file']['size']."','$n_curso','$n_materia','$n_espe','$fecha','1')";
 
 $sql_query = mysqli_query($conexion, $sql);
 

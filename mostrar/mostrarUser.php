@@ -1,4 +1,4 @@
-<?php include('template.html'); ?>
+	<?php include('template.html'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>mostrar datos</title>
+	<link rel="stylesheet" href="filestyle.css">
 </head>
+<div>
 <body>
-		<table align="center" border="1" bgcolor="green">
+		<table>
 		<td>ID</td>
 		<td>File</td>
 		<td>Type</td>
@@ -30,6 +32,7 @@
 			$file_name_final = trim ($file_name);
 			$ruta = "../upload/".$file_name_final; 
 			?>
+			<table	>
 			<tr>
 				<td><?php echo $registro['id']; ?></td>
 				<td><?php echo $registro['name']; ?></td>
@@ -41,7 +44,8 @@
               </tr>
           <?php } ?>
 	</table>
-      </body>
+      </div>
+	  </body>
       </html>
 </body>
 </html>

@@ -32,7 +32,7 @@
 		<option value="construcciones">Construcciones</option>
 	</select>
 </td>
-    <td>N~Manteria: <input type="number" id="materia" name="materia" min="1" max="10" required=""> </td>
+    <td>N~Manteria: <input type="number" id="materia" name="materia" min="1" max="15" required=""> </td>
   <td><input name="submit" type="submit" value="SUBIR ARCHIVO"></td>
   <a href="../mostrar/mostrarAdmin.php">Ver Archivos</a>
   </table>
