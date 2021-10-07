@@ -1,0 +1,15 @@
+body table {
+text-align: center;
+padding-left:30%;
+font-family: sans-serif;
+color: white;
+border=1 	
+border-color: white;
+}
+table td {
+	background: #4e94ab;
+	border-color: white;
+}
+body div{
+
+}

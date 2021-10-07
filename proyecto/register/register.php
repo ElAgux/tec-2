@@ -1,7 +1,7 @@
 <?php
 /* hace conexion con la base de datos */
 
-include 'config.php';
+include '../config.php';
 
 $nombre=$_POST["nombre"];
 $apellido=$_POST["apellido"];
@@ -10,36 +10,39 @@ $email=$_POST["email"];
 $pass=$_POST["pass"];
 
 
-   
-$sql = "INSERT INTO usuario(nombre,apellido,mail,dni,password) VALUES ('$nombre','$apellido','$email','$dni','$pass')";
 
-$consulta="SELECT * FROM `usuario` WHERE `mail`='$email'";  /*  valida si el usuario ya esta registrado */
-$resul=mysqli_query($conexion,$consulta);                                                      
-$valida=mysqli_num_rows($resul);  
-
-if($valida)
-{                                                                                   
-    echo                                                                                       
-    '                                                                                        
-    <script>
-    alert("ESTE USUARIO YA ESTA REGISTRADO");
-    window.location="register.html";
-    </script>
-    ';      
-}else{                                                                                                 
-/*funcio que guarda los datos *importante* */
-if(mysqli_query($conexion,$sql))
-{
-    echo '
-    <script>
-    alert("USUARIO REGISTRADO CON EXITO");
-    window.location="../login/login.html";
-    </script>
-    ';
-}
-}
                                                              
+require 'sendgrid/vendor/autoload.php'; // If you're using Composer (recommended)
+// Comment out the above line if not using Composer
+// require("<PATH TO>/sendgrid-php.php");
+// If not using Composer, uncomment the above line and
+// download sendgrid-php.zip from the latest release here,
+// replacing <PATH TO> with the path to the sendgrid-php.php file,
+// which is included in the download:
+// https://github.com/sendgrid/sendgrid-php/releases
 
 
+$emails = new \SendGrid\Mail\Mail(); 
+$emails->setFrom("soporte_registrotecnica2@hotmail.com", "Tecnica 2 Inscripciones"); //desde
+$emails->setSubject("Confirmar Registro"); //asunto 
+$emails->addTo($email, $nombre); //ccorreo y nombre destinatario
+$emails->addContent("text/plain", ""); // texto plano
+$emails->addContent( 
+//texto con html
+    "text/html", 
+	"<h1>Bienvenido al Sistema de Inscripciones de la Técnica 2</h1>
+		<h4>Hola, '.$nombre.'. Te enviamos este correo para verificar tu registro.</h4>
+	
+	"
+);
+$sendgrid = new \SendGrid("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");
+try {
+    $response = $sendgrid->send($emails);
+ //   print $response->statusCode() . "\n";
+   // print_r($response->headers());
+    //print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}
 
 ?>

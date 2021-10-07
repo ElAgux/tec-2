@@ -26,13 +26,13 @@
     <td>Seleccione archivo: <input name="file" type="file" size="150" maxlength="150" required=""></td>
     <td>Curso: <input type="number" id="curso" name="curso" min="1" max="7" required="" onchange="espe();"></td>
 	<td width="13%">
-	<select name="especialidad" style="display: none" id="xd">
+	<select name="especialidad" style="display: none" id="xd" required="">
 		<option value="programacion">Programacion</option>
 		<option value="electronica">Electronica</option>
 		<option value="construcciones">Construcciones</option>
 	</select>
 </td>
-    <td>N~Manteria: <input type="number" id="materia" name="materia" min="1" max="10" required=""> </td>
+    <td>N~Manteria: <input type="number" id="materia" name="materia" min="1" max="15" required=""> </td>
   <td><input name="submit" type="submit" value="SUBIR ARCHIVO"></td>
   <a href="../mostrar/mostrarAdmin.php">Ver Archivos</a>
   </table>

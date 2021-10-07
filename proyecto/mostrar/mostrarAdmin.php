@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+session_start();
+//
+	$id_usuario = $_SESSION["id_usuario"];
+
+    $sesion_iniciada = $_SESSION['sesion_iniciada'];
+
+if($sesion_iniciada == true)
+{
+?>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -7,13 +16,18 @@
 	<title>mostrar datos</title>
 </head>
 <body>
+	<div  align="right" >
+	<a href="../login/logout.php">
+                    Cerrar Sesi&oacute;n
+    </a>
+</div>
 		<table align="center" border="1" bgcolor="green">
 		<td>ID</td>
 		<td>File</td>
 		<td>Type</td>
 		<td>Size</td>
 	<?php
-		include 'config.php';
+		include '../config.php';
 		$sql = "select * from archivos where mostrar = '1'";
 		$query = mysqli_query($conexion, $sql);
 		 
@@ -39,4 +53,8 @@
 	</table>
       </body>
       </html>
-
+<?php } 
+else{
+header('Location: ../login/login.html');
+}
+?>

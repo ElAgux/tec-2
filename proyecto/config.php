@@ -1,11 +1,15 @@
 <?php
-$host='localhost';
-$usuario='root';
-$db='proyecto';
-$conexion=mysqli_connect($host,$usuario,'','proyecto');
-	if($conexion){
-		echo "Se ha conectado al servidor<br>";
-	}
-	else{
-		echo "no se pudo conectar";}
+    
+    $servidor = "localhost";
+    $usuario  = "root";
+    $password = "";
+    $base_de_datos = "proyecto";
+
+    $conexion = new mysqli($servidor, $usuario, $password, $base_de_datos);
+
+    if(mysqli_connect_errno()){
+        echo 'Conexion Fallida : ', mysqli_connect_error();
+        exit();
+    }
+
 ?>
