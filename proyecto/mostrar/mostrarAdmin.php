@@ -53,8 +53,5 @@ if($sesion_iniciada == true)
 	</table>
       </body>
       </html>
-<?php } 
-else{
-header('Location: ../login/login.html');
-}
-?>
+<?php } ?>
+
